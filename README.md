@@ -29,15 +29,19 @@ Finally, the analysis was performed using Pandas, and the plotting of the graphs
 The forecast was made using SES (Simple Exponential Smoothing)
 ## Results:
 The first topic evaluated was the sum of cases from February to June, as shown in the graph below:
+
 ![Total Cases](https://github.com/Guilherme-Turri/dengue-analisys-cpv-2023/blob/master/graph/01%20total-cases.png)
 
 The second topic evaluated was to separate the cases by month, as shown in the graph below:
+
 ![Total Cases by Month](https://github.com/Guilherme-Turri/dengue-analisys-cpv-2023/blob/master/graph/02%20positives-by-month.png)
 
 Next, a way to evaluate the cases was to separate them into Autóctones cases (Contracted within the city of Caçapava) and external cases (Contracted outside the city of Caçapava):
+
 ![Total Cases by Type](https://github.com/Guilherme-Turri/dengue-analisys-cpv-2023/blob/master/graph/03%20total-typeof.png)
 
 Similarly, just like the total number of cases, it was also separated month by month:
+
 ![Type By Month](https://github.com/Guilherme-Turri/dengue-analisys-cpv-2023/blob/master/graph/04%20typeof-by-month.png)
 
 In a preliminary analysis, we noticed that all cases in the month of February were contracted externally. One possible explanation is the increase in tourism during that period.
@@ -49,9 +53,11 @@ In a total of accumulated cases, we noticed that 2/3 of the cases today are cont
 The spread of dengue is influenced by several interconnected factors. Rainfall and temperature play a crucial role, as they create suitable breeding environments for mosquitoes, facilitating their reproduction and the transmission of the disease. Additionally, effective public policies focused on prevention and awareness campaigns are essential in controlling the mosquito population and educating the community about dengue prevention measures. Furthermore, the responsibility lies with households to ensure proper care in storing items that can collect stagnant water, as these serve as breeding sites for mosquitoes, allowing them to lay eggs and complete their life cycle, leading to the further dissemination of the disease.
 
 A second analysis was carried out by extracting rainfall data from the region from the INMET website, where we could observe the rainfall patterns as shown in the graph below:
+
 ![INMET-RAINFAL-DATA](https://github.com/Guilherme-Turri/dengue-analisys-cpv-2023/blob/master/graph/08%20rain-inmet.png)
 
 To perform the cross-referencing of rainfall data, the percentage growth of dengue cases was analyzed.
+
 ![Percetage-Increase](https://github.com/Guilherme-Turri/dengue-analisys-cpv-2023/blob/master/graph/06%20increase-percetagebymonth.png)
 
 It is interesting to observe that the month with the least rainfall (precipitation) was June, and it was also the only month that experienced a decrease in the percentage of dengue cases. However, the month with the highest rainfall (precipitation) was February, but it was not the month with the highest increase in cases in percentage terms, which was April.
@@ -78,6 +84,7 @@ Sensitivity to Outliers: The method may be sensitive to extreme values (outliers
 
 Limited for Long-Term Predictions: Due to its exponential decay nature, SES is more suitable for short-term forecasts and may not perform well for long-term predictions.
 We can observe the following SES (Simple Exponential Smoothing) graph below:
+
 ![SES=-Graph](https://github.com/Guilherme-Turri/dengue-analisys-cpv-2023/blob/master/graph/07%20SES-forecast.png)
 
 ---
