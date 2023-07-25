@@ -14,7 +14,6 @@ Search automation and data scraping on the website of Caçapava to download imag
 - Selenium
 - Requests
 - Tesseract
-- CV2
 - Pandas
 - Matplotlib
 - StatsModel/Simple Exponential Smoothing 
@@ -23,7 +22,7 @@ Search automation and data scraping on the website of Caçapava to download imag
 The first part of the project was to perform data ETL (Extract, Transform, Load).
 To access and search for the 'Dengue' topic automatically, Selenium was used. For data scraping, BeautifulSoup was used.
 
-After selecting the topics, OpenCV (CV2) was used to download the images. The data reading from a PNG file was done with Tesseract
+After selecting the topics, Requests was used to download the images. The data reading from a PNG file was done with Tesseract
 
 Finally, the analysis was performed using Pandas, and the plotting of the graphs was done with Matplotlib. The precipitation/rainfall data was extracted from a CSV file acquired from the INMET website
 The forecast was made using SES (Simple Exponential Smoothing)
@@ -64,8 +63,7 @@ It is interesting to observe that the month with the least rainfall (precipitati
 
 This reinforces the thesis that the volume of rainfall is not the sole indicator for the increase in cases. It leads us to believe that awareness (prevention) plays a crucial role in preventing the cases from growing. Other factors, such as public awareness and preventive measures, also contribute significantly to controlling and mitigating the spread of the disease.
 
-Finally, a forecast was conducted using SES (Simple Exponential Smoothing) analysis, revealing a potential increase in the number of cases to 50 in the month of July.
-
+Finally, a forecast was conducted using SES (Simple Exponential Smoothing) analysis.
 SES is a time series forecasting method that is particularly useful when dealing with data that shows a clear pattern and lacks complicated seasonal variations. It works by assigning exponentially decreasing weights to past observations, emphasizing recent data more than older data. This makes it suitable for short-term predictions, where the most recent trends hold significant importance.
 
 Advantages of using SES in the dengue prediction model:
@@ -83,6 +81,9 @@ Lack of Seasonal Adjustment: SES is not effective when dealing with data that ex
 Sensitivity to Outliers: The method may be sensitive to extreme values (outliers) in the data, which could lead to less accurate forecasts.
 
 Limited for Long-Term Predictions: Due to its exponential decay nature, SES is more suitable for short-term forecasts and may not perform well for long-term predictions.
+
+Using the SES algorithm, it is revealing a potential increase in the number of cases to 50 in the month of July.
+
 We can observe the following SES (Simple Exponential Smoothing) graph below:
 
 ![SES=-Graph](https://github.com/Guilherme-Turri/dengue-analisys-cpv-2023/blob/master/graph/07%20SES-forecast.png)
