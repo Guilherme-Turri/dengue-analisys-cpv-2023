@@ -91,6 +91,7 @@ We can observe the following SES (Simple Exponential Smoothing) graph below:
 ---
 ***
 
+## Next Steps:
 The next step of the project is to contact the City Hall of Caçapava in order to obtain more concrete data that is not available on the website, such as cases by neighborhood, to separate/cluster the data on a heat map and group them using techniques like k-means.
 
 
