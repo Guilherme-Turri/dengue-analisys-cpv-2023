@@ -46,6 +46,7 @@ Similarly, just like the total number of cases, it was also separated month by m
 In a preliminary analysis, we noticed that all cases in the month of February were contracted externally. One possible explanation is the increase in tourism during that period, such as carnaval.
 
 In a total of accumulated cases, we noticed that 2/3 of the cases today are contracted internally, as shown in the graph below:
+
 ![Type-Percetage](https://github.com/Guilherme-Turri/dengue-analisys-cpv-2023/blob/master/graph/05%20total-typeof-percetage.png)
 
 
